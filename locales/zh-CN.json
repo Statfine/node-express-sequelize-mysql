@@ -1,0 +1,7 @@
+{
+	"success": "成功",
+	"regSuccess": "注册成功",
+	"requestApiError": "requestApiError",
+	"doFail": "doFail",
+	"emailOrPwdNull": "emailOrPwdNull"
+}
