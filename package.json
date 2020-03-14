@@ -1,0 +1,40 @@
+{
+  "name": "blognodejs",
+  "version": "1.0.0",
+  "description": "bloh base node.js express mysql",
+  "main": "./bin/www",
+  "scripts": {
+    "quick": "DEBUG=blog node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "mysql"
+  ],
+  "dependencies": {
+    "bluebird": "3.4.6",
+    "blueimp-md5": "2.6.0",
+    "body-parser": "1.15.2",
+    "co": "4.6.0",
+    "config-lite": "1.5.0",
+    "cors": "2.8.1",
+    "debug": "2.6.9",
+    "ejs": "2.5.6",
+    "express": "4.14.0",
+    "express-winston": "2.0.0",
+    "i18n": "0.8.3",
+    "jsonwebtoken": "7.2.1",
+    "morgan": "1.9.1",
+    "multer": "1.2.1",
+    "mysql": "2.14.0",
+    "mysql2": "^2.1.0",
+    "node-schedule": "1.2.0",
+    "nodemailer": "3.1.4",
+    "sequelize": "4.44.3",
+    "underscore": "1.8.3",
+    "winston": "2.2.0"
+  },
+  "author": "shaojia",
+  "license": "ISC"
+}
