@@ -2,7 +2,7 @@
  * @Description:  controllers
  * @Author: shaojia
  * @Date: 2020-03-13 23:12:26
- * @LastEditTime: 2020-03-14 23:19:42
+ * @LastEditTime: 2020-03-15 23:06:16
  * @LastEditors: shaojia
  */
 var co = require('co');
@@ -126,5 +126,52 @@ module.exports = {
 				error: error,
 			});
 		});
-	},
-};
+  },
+  
+  /**
+   * 获取用户详情 uuid
+  */
+ getUserInfo: function(req, res, next) {
+  //参数
+  var params = req.query || req.params;
+  var userUuid = utils.trim(params.uuid);
+  if (!userUuid) {
+    utils.handleJson({
+      response: res,
+      msg: i18n.__('pleasePassUserUuid'),
+    });
+    return;
+  }
+  co(function*() {
+    var userResult = yield User.findOne({
+      where: {
+        uuid: userUuid,
+      },
+      attributes: {
+        exclude: ['password'],//不含password
+      },
+    });
+    if (userResult) {
+      // success
+      utils.handleJson({
+        response: res,
+        result: {
+          user: userResult.dataValues,
+        },
+      });
+    } else {
+      // fail
+      utils.handleJson({
+        response: res,
+        msg: i18n.__('userInfoNull'),
+      });
+    }
+  }).catch(function(error){
+    //err
+    utils.handleError({
+      response: res,
+      error: error,
+    });
+  })
+ },
+}

@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: shaojia
  * @Date: 2020-03-13 22:55:02
- * @LastEditTime: 2020-03-13 23:34:12
+ * @LastEditTime: 2020-03-15 22:59:21
  * @LastEditors: shaojia
  */
 var express = require('express');
@@ -21,6 +21,13 @@ router.post('/reg', function(req, res, next) {
 */
 router.get('/checkEmail', function(req, res, next) {
   userDao.checkEmail(req, res, next)
+});
+
+/**
+ * 检测邮箱
+*/
+router.get('/info', function(req, res, next) {
+  userDao.getUserInfo(req, res, next)
 });
 
 module.exports = router;

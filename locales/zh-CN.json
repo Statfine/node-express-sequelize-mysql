@@ -3,5 +3,7 @@
 	"regSuccess": "注册成功",
 	"requestApiError": "requestApiError",
 	"doFail": "doFail",
-	"emailOrPwdNull": "emailOrPwdNull"
+	"emailOrPwdNull": "emailOrPwdNull",
+	"doSuccess": "doSuccess",
+	"pleasePassUserUuid": "pleasePassUserUuid"
 }

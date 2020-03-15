@@ -23,10 +23,10 @@ module.exports = {
 	// 	spassword: "xxxx2019",
 	// 	admin: "xxxx@163.com",
 	// },
-	// page: { //默认分页
-	// 	currPage: 1,
-	// 	pageSize: 10,
-	// },
+	page: { //默认分页
+		currPage: 1,
+		pageSize: 10,
+	},
 	// file: { //文件配置
 	// 	path: { //路径
 	// 		upload: { //上传路径
