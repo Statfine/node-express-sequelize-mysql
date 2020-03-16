@@ -5,5 +5,7 @@
 	"doFail": "doFail",
 	"emailOrPwdNull": "emailOrPwdNull",
 	"doSuccess": "doSuccess",
-	"pleasePassUserUuid": "pleasePassUserUuid"
+	"pleasePassUserUuid": "pleasePassUserUuid",
+	"loginSuccess": "loginSuccess",
+	"logoutSuccess": "logoutSuccess"
 }

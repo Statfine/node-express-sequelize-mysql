@@ -15,9 +15,9 @@ module.exports = {
   // pwd: { //密码
 	// 	salt: 10, //密码强度
 	// },
-	// token: { //token https://github.com/auth0/node-jsonwebtoken
-	// 	secretOrPrivateKey: 'iboomer', // app.superSecret key the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
-	// },
+	token: { //token https://github.com/auth0/node-jsonwebtoken
+		secretOrPrivateKey: 'isj', // app.superSecret key the secret for HMAC algorithms, or the PEM encoded private key for RSA and ECDSA.
+	},
 	// email: { //默认邮箱
 	// 	service: "service@notice.xxxxx.com",
 	// 	spassword: "xxxx2019",
